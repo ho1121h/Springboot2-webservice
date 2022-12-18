@@ -19,4 +19,10 @@ public class Application { // main 클래스
  * http://localhost:8080/h2-console/
  * JDBC URL : jdbc:h2:mem:testdb
  * 글 등록 하고 싶으면 , user 테이블가서 update set role = 'USER';
+ * aws 에 빌드한 사이트에 접속 : ec2-13-125-143-204.ap-northeast-2.compute.amazonaws.com:8080
+ * ## 접속불가시 1. aws에 접속
+ * 2.인스턴스 재부팅
+ * 3. 재부팅 후 putty 실행
+ * 4. ./deploy.sh 로 실행
+ * 5. 다시 aws 빌드 사이트 접속
  */
