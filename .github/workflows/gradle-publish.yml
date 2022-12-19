@@ -47,7 +47,7 @@ jobs:
     - name: Show Current Time
       run: echo "CurrentTime=${{steps.current-time.outputs.formattedTime}}" # (10)
       shell: bash
-      # 아래부분이 추가되는 내용입니다.
+    #zip 생성
     - name: Make zip file
       run: zip -r ./$PROJECT_NAME.zip .         # (12)
       shell: bash
