@@ -1,0 +1,21 @@
+language: java
+jdk:
+  - openjdk8
+  
+branches:
+  only:
+  - master
+
+
+# CI 서버의 home
+cache:
+  directories:
+  - '$HOME/.m2/repository'
+  - '$HOME/.gradle'
+script: "./gradlew clean build"
+
+#CI 실행 완료 시 메일로 알람
+notification:
+ email:
+  recipients:
+    - ho1121h@gmail.com
