@@ -2,13 +2,16 @@ package org.example.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.ApplicationPidFileWriter;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 //@EnableJpaAuditing //JpaAuditing 어노테이션을 모두 활성화 하도록 추가
 @SpringBootApplication
 public class Application { // main 클래스
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication application = new SpringApplication(Application.class);
+        application.addListeners(new ApplicationPidFileWriter());
+        application.run(args);
     }
 }
 /**

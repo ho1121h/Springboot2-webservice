@@ -4,6 +4,19 @@ files:
   - source: /
     destination: /home/ec2-user/app/step2/zip/
     overwrite: yes
+
+permissions:
+  - object: /
+    pattern: "**"
+    owner: ec2-user
+    group: ec2-user
+
+hooks:
+  ApplicationStart:
+    - location: deploy.sh
+      timeout: 60
+      runas: ec2-user
+
 #  source는 전달해준 파일 중 destination으로 이동시킬 대상입니다. / 인 경우 전체 파일을 지정하게 됩니다.
 #  destination는 파일을 받을 위치입니다.
 #
