@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ec2-user/app/step2/zip/
+    overwrite: yes
+#  source는 전달해준 파일 중 destination으로 이동시킬 대상입니다. / 인 경우 전체 파일을 지정하게 됩니다.
+#  destination는 파일을 받을 위치입니다.
+#
+#  또한 main.yml에도 다음과 같이 코드를 추가합니다.
