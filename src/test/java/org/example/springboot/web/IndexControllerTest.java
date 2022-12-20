@@ -24,7 +24,7 @@ public class IndexControllerTest {
         //when
         String body = this.restTemplate.getForObject("/", String.class);
         //then
-        assertThat(body).contains("스프링부트로 시작하는 웹 서비스");
+        assertThat(body).contains("스프링부트로 시작하는 웹 서비스 Ver.3");
         //요청 했을때 해당 문자열이 있는지 검증
 
     }
