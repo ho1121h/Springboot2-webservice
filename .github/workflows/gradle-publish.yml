@@ -61,7 +61,7 @@ jobs:
         mv before-deploy/before-deploy.zip deploy/$PROJECT_NAME.zip
       shell: bash
 
-        #zip 생성
+
     - name: Make zip file
       run: zip -r ./$PROJECT_NAME.zip .         # (12)
       shell: bash
