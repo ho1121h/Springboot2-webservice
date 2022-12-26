@@ -1,8 +1,8 @@
 env:  
   S3_BUCKET_NAME: ho1121h-build
   PROJECT_NAME: Springboot2-webservice
-  CODE_DEPLOY_APP_NAME: springboot-webservice                   #(15)
-  CODE_DEPLOY_GROUP_NAME: springboot-webservice-group
+  CODE_DEPLOY_APP_NAME: Springboot2-webservice                   #(15)
+  CODE_DEPLOY_GROUP_NAME: Springboot2-webservice-group
 
 name: deploy # (0) GitHub Action에서 보여질 이름을 지정합니다. 
 
